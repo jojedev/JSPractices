@@ -1,4 +1,6 @@
 "use strict";
+
+/* Deep understanding of functions, practices*/
 /*
 const bookings = [];
 const createBooking = function (
