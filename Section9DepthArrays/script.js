@@ -1,5 +1,5 @@
 // Data needed for first part of the section
-
+// Advance arrays
 const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
 const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
