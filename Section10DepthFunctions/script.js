@@ -233,7 +233,7 @@ BONUS TEST DATA 1: [5, 2, 3]
 BONUS TEST DATA 2: [1, 5, 3, 9, 6, 1]
 GOOD LUCK 😀
 */
-
+/*
 const poll = {
   question: "What is your favorite programming language?",
   options: ["0: Javascript", "1: Python", "2: Rust", "3: C++"],
@@ -271,3 +271,34 @@ document
   .addEventListener("click", poll.registerNewAnswer.bind(poll));
 
   poll.displayResults.call({ answers: [5, 2, 3], } 'string');
+  */
+/*
+const runOnce = function () {
+  console.log("This will never run again");
+};
+runOnce();
+
+// Inmediately called function. This is useful if we need data encaptulation.
+
+(function () {
+  console.log("This will never run again");
+})();
+
+// If we need data privacy on ES6 we can use a block {} this replace whats above this.
+{
+  const isPrivate = 23;
+  var notPrivate = 46;
+}
+*/
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+
+const booker = secureBooking();
+
+booker();
